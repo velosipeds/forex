@@ -23,7 +23,7 @@ drop_old_tables = True
 
 
 Base = declarative_base()
-mysql_url = "mysql://forex:yummy4money@zplizzi.cddqdipecvfk.us-west-2.rds.amazonaws.com/forex?charset=utf8"
+mysql_url = "mysql://forex:yummy4money@forex.c2ggnaqt6wye.us-west-1.rds.amazonaws.com/forex"
 sqlite_url = 'sqlite:///database.db'
 db = create_engine(mysql_url, echo=print_sql_queries)
 session = sessionmaker()
@@ -31,5 +31,5 @@ session.configure(bind=db)
 session = session()
 
 if drop_old_tables:
-	db.engine.execute("drop table if exists articles")
-	db.engine.execute("drop table if exists tags")
+	db.engine.execute("drop table if exists articles_new")
+	db.engine.execute("drop table if exists tags_new")
