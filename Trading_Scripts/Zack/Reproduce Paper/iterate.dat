@@ -15,3 +15,14 @@ f     = function value
            * * *
 
 Machine precision = 2.220D-16
+ N =            2     M =           12
+
+   it   nf  nseg  nact  sub  itls  stepl    tstep     projg        f
+    0    1     -     -   -     -     -        -     5.502D-03 -3.704D+00
+    1    4     1     0  ---    2  4.3D-05  2.3D-07  4.619D-06 -3.704D+00
+    2    5     0     0  con    0  1.0D+00  2.1D-10  4.530D-06 -3.704D+00
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+
+ Total User time 0.000E+00 seconds.
+
